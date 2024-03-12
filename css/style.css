@@ -3,22 +3,24 @@
   
   form {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 70%;
+    column-gap: 10%;
     border: 1px solid #ccc;
     border-radius: 16px;
     width:70%;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: #FFFFFF;
+    background: #2546f0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: #FFFFFF;
   }
 
   #name {
@@ -26,7 +28,7 @@
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
+    background: #FFFFFF;
     color: #9B9A6D;
   }
 
@@ -41,18 +43,33 @@
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    background-color: #5928ed;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
     border-radius: 5px;
     cursor: pointer;
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #3706cb;
+  }
+
+  button[type="reset"] {
+    background-color: #5928ed;
+    color: #FFFFFF;
+  }
+
+  button[type="reset"]:hover {
+    background-color: #3706cb;
+  }
+
+  .label-button {
+    border: 2px solid #FFFFFF;
+    margin: 5px;
   }
